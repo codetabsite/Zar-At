@@ -37,24 +37,19 @@ jobs:
       - run: chmod +x gradlew && ./gradlew assembleDebug assembleRelease
 
       - name: Sign APK
-        if: env.KEYSTORE_BASE64 != ''
         env:
-          KEYSTORE_BASE64: ${{ secrets.KEYSTORE_BASE64 }}
           KEY_ALIAS: ${{ secrets.KEY_ALIAS }}
           KEY_PASSWORD: ${{ secrets.KEY_PASSWORD }}
           STORE_PASSWORD: ${{ secrets.STORE_PASSWORD }}
         run: |
-          printf '%s' "$KEYSTORE_BASE64" | base64 -d > zar.jks
-          ls -la zar.jks
           BUILD_TOOLS=$(ls $ANDROID_HOME/build-tools/ | sort -V | tail -1)
           $ANDROID_HOME/build-tools/$BUILD_TOOLS/apksigner sign \
-            --ks zar.jks \
+            --ks app/zar.jks \
             --ks-key-alias "$KEY_ALIAS" \
             --ks-pass pass:"$STORE_PASSWORD" \
             --key-pass pass:"$KEY_PASSWORD" \
             --out app/build/outputs/apk/release/zar-signed.apk \
             app/build/outputs/apk/release/app-release-unsigned.apk
-          rm zar.jks
 
       - uses: actions/upload-artifact@v4
         with:
@@ -89,22 +84,18 @@ jobs:
 
       - name: Sign APK
         env:
-          KEYSTORE_BASE64: ${{ secrets.KEYSTORE_BASE64 }}
           KEY_ALIAS: ${{ secrets.KEY_ALIAS }}
           KEY_PASSWORD: ${{ secrets.KEY_PASSWORD }}
           STORE_PASSWORD: ${{ secrets.STORE_PASSWORD }}
         run: |
-          printf '%s' "$KEYSTORE_BASE64" | base64 -d > zar.jks
-          ls -la zar.jks
           BUILD_TOOLS=$(ls $ANDROID_HOME/build-tools/ | sort -V | tail -1)
           $ANDROID_HOME/build-tools/$BUILD_TOOLS/apksigner sign \
-            --ks zar.jks \
+            --ks app/zar.jks \
             --ks-key-alias "$KEY_ALIAS" \
             --ks-pass pass:"$STORE_PASSWORD" \
             --key-pass pass:"$KEY_PASSWORD" \
             --out app/build/outputs/apk/release/zar-signed.apk \
             app/build/outputs/apk/release/app-release-unsigned.apk
-          rm zar.jks
 
       - uses: softprops/action-gh-release@v2
         with:
