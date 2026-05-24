@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Backgrounds -->
+    <color name="bg_dark">#0F0F0F</color>
+    <color name="bg_light">#F5F5F5</color>
+
+    <!-- Gold (default accent) -->
+    <color name="gold">#F5C842</color>
+    <color name="gold_light">#FFE57F</color>
+    <color name="gold_dark">#C9A227</color>
+
+    <!-- Blue accent -->
+    <color name="blue_accent">#2196F3</color>
+    <color name="blue_accent_dark">#1565C0</color>
+
+    <!-- Red accent -->
+    <color name="red_accent">#F44336</color>
+    <color name="red_accent_dark">#B71C1C</color>
+
+    <!-- Green accent -->
+    <color name="green_accent">#4CAF50</color>
+    <color name="green_accent_dark">#1B5E20</color>
+
+    <!-- Text -->
+    <color name="text_dark">#FFFFFF</color>
+    <color name="text_light">#111111</color>
+    <color name="hint_dark">#555555</color>
+    <color name="hint_light">#AAAAAA</color>
+
+    <!-- Dice face -->
+    <color name="dice_white">#F0EDE8</color>
+    <color name="dice_dot">#1A1A1A</color>
+
+    <!-- Misc -->
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+</resources>

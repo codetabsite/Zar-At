@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">ZAR</string>
+    <string name="subtitle">Jiroskop Zar Oyunu</string>
+    <string name="roll_button">ZAR AT</string>
+    <string name="no_sensor_warning">Sensör bulunamadı</string>
+    <string name="dice_content_description">Zar</string>
+    <string name="widget_label">Zar</string>
+    <string name="widget_description">Ana ekrandan zar at</string>
+    <string name="roll_action">ZAR AT</string>
+
+    <!-- Settings sheet -->
+    <string name="settings_title">Ayarlar</string>
+    <string name="settings_volume">Ses Seviyesi</string>
+    <string name="settings_speed">Zar Hızı</string>
+    <string name="settings_night_timer">Gece Modu Saati</string>
+    <string name="settings_color_theme">Renk Teması</string>
+    <string name="settings_close">Kapat</string>
+
+    <!-- Color themes -->
+    <string name="theme_gold">Altın</string>
+    <string name="theme_blue">Mavi</string>
+    <string name="theme_red">Kırmızı</string>
+    <string name="theme_green">Yeşil</string>
+
+    <!-- Share -->
+    <string name="share_text">🎲 ZAR attım: %1$d + %2$d = %3$d!\nZAR uygulamasıyla oynadım.</string>
+    <string name="share_title">Sonucu Paylaş</string>
+</resources>
