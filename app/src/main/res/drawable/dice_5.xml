@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- Top-left -->
+    <item android:top="24dp" android:bottom="120dp" android:left="24dp" android:right="120dp">
+        <shape android:shape="oval"><solid android:color="@color/dice_dot"/></shape>
+    </item>
+    <!-- Top-right -->
+    <item android:top="24dp" android:bottom="120dp" android:left="120dp" android:right="24dp">
+        <shape android:shape="oval"><solid android:color="@color/dice_dot"/></shape>
+    </item>
+    <!-- Center -->
+    <item android:top="72dp" android:bottom="72dp" android:left="72dp" android:right="72dp">
+        <shape android:shape="oval"><solid android:color="@color/dice_dot"/></shape>
+    </item>
+    <!-- Bottom-left -->
+    <item android:top="120dp" android:bottom="24dp" android:left="24dp" android:right="120dp">
+        <shape android:shape="oval"><solid android:color="@color/dice_dot"/></shape>
+    </item>
+    <!-- Bottom-right -->
+    <item android:top="120dp" android:bottom="24dp" android:left="120dp" android:right="24dp">
+        <shape android:shape="oval"><solid android:color="@color/dice_dot"/></shape>
+    </item>
+</layer-list>

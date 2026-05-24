@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- Top-left dot -->
+    <item android:top="28dp" android:bottom="108dp" android:left="28dp" android:right="108dp">
+        <shape android:shape="oval"><solid android:color="@color/dice_dot"/></shape>
+    </item>
+    <!-- Bottom-right dot -->
+    <item android:top="108dp" android:bottom="28dp" android:left="108dp" android:right="28dp">
+        <shape android:shape="oval"><solid android:color="@color/dice_dot"/></shape>
+    </item>
+</layer-list>
